@@ -1,0 +1,161 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoja De Vida</title>
+    <link rel="stylesheet" href="css/practica01.css">
+    <!--<script>
+        alert("Bienvenidos a" + "\n" + " " + "Mi Hoja de Vida");
+    </script>-->
+
+    <body>
+        <!--Slider-->
+        <div>
+            <header id="arriba">
+                <h1>Jorge Ayona </h1>
+                <h2>Hoja De Vida</h2>
+            </header>
+        </div>
+      <!--  <div class="main">
+            <div class="slides">
+                <img src="http://lorempixel.com/1600/900/city/1" alt="">
+                <img src="http://lorempixel.com/1600/900/city/2" alt="">
+                <img src="http://lorempixel.com/1600/900/city/3" alt="">
+            </div>
+        </div>-->
+        <nav>
+            <a href="#habilidades">|Habilidades|</a>
+            <a href="#formacion">Formación|</a>
+            <a href="#experiencia">Experiencia|</a>
+            <a href="#contacto">Contacto|</a>
+        </nav>
+        <details open>
+            <summary>Acerca De Mí</summary>
+            Mi hobby es precisamente el desarrollo web y programación. Se que my pocos pueden decir que su trabajo es su hobby,
+            <em>ese es mi caso</em>.
+        </details>
+
+        <section>
+            <article>
+                <div>
+                    <h1 id="habilidades">Habilidades & Competencias</h1></a>
+                    <legend><strong>Inglés 95%</strong></legend>
+                    <progress class="cen" max="100" value="95"></progress>
+                    <legend><strong>Wordpress 95%</strong></legend>
+                    <progress class="cen" max="100" value="95"></progress>
+                    <legend><strong>Moodle 95%</strong></legend>
+                    <progress class="cen" max="100" value="95"></progress>
+                    <legend><strong>Html5 90%</strong> </legend>
+                    <progress class="cen" max="100" value="90"> </progress>
+                    <legend><strong>Drupal 80%</strong></legend>
+                    <progress class="cen" max="100" value="80"></progress>
+                    <legend><strong>Javascript 80%</strong> </legend>
+                    <progress class="cen" max="100" value="80"></progress>
+                    <legend><strong>Mysql 60%</strong> </legend>
+                    <progress class="cen" max="100" value="60"></<progress>
+                    <legend><strong>PHP 60%</strong> </legend>
+                    <progress class="cen" max = "100" value= "60"> </progress>
+                </div>
+                <p><a href="#arriba">Regresar arriba</a></p>
+            </article>
+            <div>
+                <article>
+                    <h1 id="formacion">Formación Académica</h1>
+                    <ul>
+                        <li><strong>Universidad San Martín De Porres</strong></li>
+                        <ul>
+                            <li>Administración</li>
+                            <li>Creación De Aulas Virtuales - Moodle</li>
+                            <li>Gestión De Cursos Virtuales - Moodle</li>
+                        </ul>
+                        <li><strong>Ilen</strong></li>
+                        <ul>
+                            <li>Marketing Digital & Redes Sociales</li>
+                        </ul>
+                        <li><strong>Institución Educativa Continental</strong></li>
+                        <ul>
+                            <li>Coaching Ontológico</li>
+                        </ul>
+                    </ul>
+                    <p> <a href="#arriba">Regresar arriba</a></p>
+            </div>
+            </article>
+            <div>
+                <article>
+                    <h1 id="experiencia">Experiencia</h1>
+                    <ul>
+                        <li><strong>Incapro- Perú</strong></li>
+                        <ul>
+                            <li>Asesor en Tic's para la Educación</li>
+                            <li>Asesor En Marketing Digital</li>
+                        </ul>
+                        <li><strong>Proyectos & Mineria</strong></li>
+                        <ul>
+                            <li>Coaching Ejecutivo</li>
+                        </ul>
+                        <li><strong>Crece Consultores</strong></li>
+                        <ul>
+                          <li>Capacitador Soft-Skills Cencosud</li>
+                        </ul>
+                        <li><strong>Instituto Punto De Venta</strong></li>
+                        <ul>
+                          <li>Instructor de los Cursos: Marketing & Negociación.</li>
+                        </ul>
+              <!-- <li></li>-->
+                    </ul>
+                    <p> <a href="#arriba">Regresar arriba</a></p>
+            </div>
+            </article>
+            <div>
+                <article>
+                    <h1 id="contacto">Para Contactarnos</h1>
+                    <p>Le responderemos a la brevedad</p>
+                    <form action="practica01.php" method="post">
+                        <legend>Contacto</legend>
+                        <fieldset>
+                            <legend>Nombre</legend><input type="text" name="nombre" placeholder="Juan Pérez" required><br>
+                            <legend>E-mail</legend><input type="email" name="email" placeholder="mi-email@xxx.com" required><br>
+                            <legend>Asunto</legend><input type="text" name="asunto" placeholder="¿De qué se trata?"><br>
+                            <legend>Mensaje</legend>
+                            <textarea name="mensaje" cols="25" rows="6" placeholder="¿Qué nos quiere decir?"></textarea><br>
+                            <input class="cent" type="submit" name=" " value="Enviar ">
+                        </fieldset>
+                    </form>
+                    <p><a href="#arriba">Regresar arriba</a></p>
+                </article>
+
+            </div>
+        </section>
+        <footer>
+            <p class="centro ">&copy; <em> Jorge Ayona</em> </p>
+        </footer>
+        <script>
+
+$(function(){
+$(".slides ").slidesjs({
+  play: {
+    active: true,
+      // [boolean] Generate the play and stop buttons.
+      // You cannot use your own buttons. Sorry.
+    effect: "slide ",
+      // [string] Can be either "slide " or "fade ".
+    interval: 3000,
+      // [number] Time spent on each slide in milliseconds.
+    auto: true,
+      // [boolean] Start playing the slideshow on load.
+    swap: true,
+      // [boolean] show/hide stop and play buttons
+    pauseOnHover: false,
+      // [boolean] pause a playing slideshow on hover
+    restartDelay: 2500
+      // [number] restart delay on inactive slideshow
+  }
+});
+});
+
+</script>
+    </body>
+
+</html>
